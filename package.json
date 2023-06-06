@@ -1,0 +1,41 @@
+{
+  "name": "express-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc '*.ts' 'application/**/*.ts' 'lib/**/*.ts' 'config/**/*.ts' --write",
+    "build": "npx tsc",
+    "ts-execution": "ts-node ./index.ts",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/confidence": "^1.4.31",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.2.5",
+    "ajv": "^8.12.0",
+    "axios": "^1.4.0",
+    "confidence": "^5.0.1",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.6.0",
+    "ts-node": "^10.9.1",
+    "winston": "^3.9.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "concurrently": "^8.1.0",
+    "eslint": "^8.21.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
